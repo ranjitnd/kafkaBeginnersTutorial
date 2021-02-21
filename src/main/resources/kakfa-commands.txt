@@ -1,0 +1,19 @@
+Course Material - https://courses.datacumulus.com/downloads/kafka-beginners-bu5
+https://github.com/simplesteph/kafka-beginners-course
+
+C:\data\inst\kafka_2.13-2.7.0
+
+zookeeper-server-start config\zookeeper.properties
+
+kafka-server-start.bat config\server.properties
+
+// Create topic
+kafka-topics --zookeeper localhost:2181 --topic first_topic --create --partitions 3 --replication-factor 1
+
+//list topics
+kafka-topics --zookeeper localhost:2181 --list
+
+//describe topic
+kafka-topics --zookeeper localhost:2181 --topic first_topic --describe
+
+
